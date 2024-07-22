@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<title>Sports </title>
+<link rel="stylesheet" href="styles.css">
+<script>
+if ($(window).width() > 1024) {
+    document.write("<" + "script src='js/jquery.preloader.js'></" + "script>");
+}
+</script>
+<script>
+jQuery(window).load(function () {
+    $x = $(window).width();
+    if ($x > 1024) {
+        jQuery("#content .row").preloader();
+    }
+    jQuery('.magnifier').touchTouch();
+    jQuery('.spinner').animate({
+        'opacity': 0
+    }, 1000, 'easeOutCubic', function () {
+        jQuery(this).css('display', 'none')
+    });
+});
+</script>
+</head>
+<body>
+<header>
+  <nav>
+      <div class="logo">
+          <img src="images/logo1.PNG" alt="Sports Club Logo">
+      </div>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Us">About Us</a></li>
+          <li><a href="folio.html">Gallery</a></li>
+          <li><a href="#">Athletics</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contacts</a></li>
+      </ul>
+  </nav>
+</header>
+ 
+
+
+
+<div class="bg-content">
+  <div id="content">
+    <div class="container">
+      <div class="row">
+        <article class="span8">
+          <h3>Contact us</h3>
+          <div class="inner-1">
+            <form id="contact-form" action="#">
+              <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
+              <fieldset>
+                <div>
+                  <label class="name">
+                    <input type="text" value="Your name">
+                    <br>
+                    <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+                </div>
+                <div>
+                  <label class="phone">
+                    <input type="tel" value="Telephone">
+                    <br>
+                    <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+                </div>
+                <div>
+                  <label class="email">
+                    <input type="email" value="Email">
+                    <br>
+                    <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
+                </div>
+                <div>
+                  <label class="message">
+                    <textarea>Message</textarea>
+                    <br>
+                    <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label>
+                </div>
+                <div class="buttons-wrapper"> <a class="btn btn-1" data-type="reset">Clear</a> <a class="btn btn-1" data-type="submit">Send</a></div>
+              </fieldset>
+            </form>
+          </div>
+        </article>
+        <article class="span4">
+          <h3>Coach</h3>
+          <div class="map">
+            <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="images/coach.jpg"></a></li>
+         
+          </div>
+          <!-- <address class="address-1">
+          <strong>Grewis<br>
+          8901 Marmora Road<br>
+          Glasgow, D04 89GR.</strong>
+          <div class="overflow"> <span>Freephone:</span>+1 800 559 6580<br>
+            <span>Telephone:</span>+1 800 603 6035<br>
+            <span>FAX:</span>+1 800 889 9898 <br>
+            <span>E-mail:</span> <a href="#" class="mail-1">mail@demolink.org</a><br>
+            <span>Skype:</span> <a href="#" class="mail-1">@skypename</a></div>
+          </address>
+        </article>
+      </div> -->
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container clearfix">
+    <ul class="list-social pull-right">
+      <li><a class="icon-1" href="#"></a></li>
+      <li><a class="icon-2" href="#"></a></li>
+      <li><a class="icon-3" href="#"></a></li>
+      <li><a class="icon-4" href="#"></a></li>
+    </ul>
+    <div class="privacy pull-left">Design by: <a href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
+  </div>
+</footer>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

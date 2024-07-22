@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<title>Sports </title>
+<link rel="stylesheet" href="styles.css">
+<script>
+if ($(window).width() > 1024) {
+    document.write("<" + "script src='js/jquery.preloader.js'></" + "script>");
+}
+</script>
+<script>
+jQuery(window).load(function () {
+    $x = $(window).width();
+    if ($x > 1024) {
+        jQuery("#content .row").preloader();
+    }
+    jQuery('.magnifier').touchTouch();
+    jQuery('.spinner').animate({
+        'opacity': 0
+    }, 1000, 'easeOutCubic', function () {
+        jQuery(this).css('display', 'none')
+    });
+});
+</script>
+</head>
+<body>
+<header>
+  <nav>
+      <div class="logo">
+          <img src="images/logo1.PNG" alt="Sports Club Logo">
+      </div>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="folio.html">Gallery</a></li>
+          <li><a href="Athetes.html">Athletes</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="Events.html">News</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+      </ul>
+  </nav>
+</header>
+ 
+<div class="bg-content">
+  <div id="content">
+    <div class="container">
+      <div class="row">
+        <article class="span12">
+          <h3>Gallery</h3>
+        </article>
+        <div class="clear"></div>
+        <ul class="portfolio clearfix">
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img1.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img2.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img3.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img4.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img5.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img6.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img7.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img8.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img9.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img10.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img11.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img12.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img13.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img14.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img15.jpg"></a></li>
+          <li class="box"><a href="img/image-blank.png" class="magnifier"><img alt="" src="img/page3-img16.jpg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container clearfix">
+    <ul class="list-social pull-right">
+      <li><a class="icon-1" href="#"></a></li>
+      <li><a class="icon-2" href="#"></a></li>
+      <li><a class="icon-3" href="#"></a></li>
+      <li><a class="icon-4" href="#"></a></li>
+    </ul>
+    
+</footer>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

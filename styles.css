@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:rgb(241, 240, 240);
+    box-shadow: 0 4px 6px rgb(2, 2, 197);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(2, 2, 197);
+}
+
+.slider {
+    position: relative;
+    height: 90vh; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center 28%; /* Focus on top center to prevent cutting */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+.slide .content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    color: pink;
+    text-align: center;
+    max-width: 500px;
+    margin-top: 30%; /* Adjust this value to move the content down */
+}
+
+.slide .content h2 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+.slide .content p {
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.slide .content .btn {
+    background-color: rgb(2, 2, 197);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
